@@ -1,0 +1,27 @@
+// Compiler
+
+@use "./_variables.scss";
+@use "./_colors.scss";
+@use "./_shapes.scss";
+@use "./_sizes.scss";
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: auto;
+    font-size: 1.5rem;
+    font-family: 'Michroma', sans-serif;
+
+    &:hover {
+        opacity: 0.5;
+        color:black;
+        transform:scale(0.9);
+        translate: (5px 5px); 
+
+    }
+}
+
+
+

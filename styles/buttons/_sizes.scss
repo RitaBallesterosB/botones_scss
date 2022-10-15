@@ -1,0 +1,16 @@
+@import '_variables.scss';
+
+// Size Mixin 
+@mixin size ($width, $heigth, $padding) {
+    width: $width;
+    height: $heigth;
+    padding: $padding;
+    min-width: $wmin;
+    min-height: $hmin;
+}
+
+// Buttons for each size
+.btn1--xs { @include size($wxs, $hxs, $gpadding);}
+.btn1--sm { @include size($wsm, $hsm, $gpadding);}
+.btn1--md { @include size($wmd, $hmd, $gpadding);}
+.btn1--lg { @include size($wlg, $hlg, $gpadding);}

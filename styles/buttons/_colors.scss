@@ -1,0 +1,120 @@
+@import '_variables.scss';
+
+// Color Mixin 
+@mixin color($bg, $col, $border, $shadow) {
+    background-color: $bg;
+    color: $col;
+    border: $border;
+    box-shadow: $shadow;
+}
+
+// Color Mixin Tertiary
+
+
+
+
+@mixin bordertert ($bsty, $width, $color) {
+    border-style:$bsty;
+    border-width:$width;
+    border-color: $color;
+    
+}
+
+
+// Color1 Button Primary
+.btn1--color1 {
+    @include color($bg1, $fc1, none, $gshadow);
+    
+}
+
+
+// Color2 Button Primary
+.btn1--color2 {
+    @include color($bg2, $fc2, none, $gshadow);
+   
+}
+
+// Color3 Button Primary
+.btn1--color3 {
+    @include color($bg3, $fc3, none, $gshadow);
+ 
+}
+
+// Color4 Button Primary
+.btn1--color4 {
+    @include color($bg4, $fc4, none, $gshadow);
+    
+}
+
+// Color5 Button Primary
+.btn1--color5 {
+    @include color($bg5, $fc5, none, $gshadow);
+  
+}
+
+
+
+// Color1 Button Secondary 
+.btn1--colorsec1 {
+    @include color($bgsec1, $fcsec, none, $gshadow);
+    
+}
+
+.btn1--colorsec2 {
+    @include color($bgsec2, $fcsec, none, $gshadow);
+  
+}
+
+.btn1--colorsec3 {
+    @include color($bgsec3, $fcsec, none, $gshadow);
+   
+}
+
+.btn1--colorsec4 {
+    @include color($bgsec4, $fcsec, none, $gshadow);
+   
+}
+.btn1--colorsec5 {
+    @include color($bgsec5, $fcsec, none, $gshadow);
+    
+}
+
+
+
+
+// Color1 Button Tertiary 
+.btn1--colortert1 {
+    @include color($bgtert1, $fctert1, none, $gshadow);
+    &.btn1--colortert1 {
+    @include bordertert(double, 5px, $bordertert1);
+    }
+     
+}
+
+.btn1--colortert2 {
+    @include color($bgtert1, $fctert2, 3px, $gshadow);
+    &.btn1--colortert2 {
+    @include bordertert(double, 5px, $bordertert2);
+    }
+    
+}
+
+.btn1--colortert3 {
+    @include color($bgtert1, $fctert3, 3px, $gshadow);
+    &.btn1--colortert3 {
+    @include bordertert(double, 5px, $bordertert3);
+    }
+}
+
+.btn1--colortert4 {
+    @include color($bgtert1, $fctert4, 3px, $gshadow);
+    &.btn1--colortert4 {
+    @include bordertert(double, 5px, $bordertert4);
+    }
+}
+.btn1--colortert5 {
+    @include color($bgtert1, $fctert5, 3px, $gshadow);
+    &.btn1--colortert5 {
+    @include bordertert(double, 5px, $bordertert5);
+    }
+}
